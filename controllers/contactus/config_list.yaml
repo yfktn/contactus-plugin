@@ -1,0 +1,11 @@
+list: $/yfktn/contactus/models/contactus/columns.yaml
+modelClass: yfktn\ContactUs\Models\ContactUs
+title: ContactUs
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

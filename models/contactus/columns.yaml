@@ -1,0 +1,10 @@
+columns:
+    author:
+        label: yfktn.contactus::lang.column.list_author
+        type: text
+    email:
+        label: Email
+        type: text
+    comment:
+        label: yfktn.contactus::lang.column.list_comment
+        type: text

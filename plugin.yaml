@@ -1,0 +1,17 @@
+plugin:
+    name: 'yfktn.contactus::lang.plugin.name'
+    description: 'yfktn.contactus::lang.plugin.description'
+    author: 'Yan Friskantoni'
+    icon: oc-icon-briefcase
+    homepage: ''
+permissions:
+    yfktn.contact_us.manage:
+        tab: 'yfktn.contactus::lang.plugin.name'
+        label: 'yfktn.contactus::lang.plugin.perm_manage_label'
+navigation:
+    main-menu-contactus:
+        label: 'yfktn.contactus::lang.menu.main_menu'
+        url: yfktn/contactus/contactus
+        icon: icon-briefcase
+        permissions:
+            - yfktn.contact_us.manage
