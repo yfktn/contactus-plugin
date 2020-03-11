@@ -12,7 +12,7 @@ class ContactUs extends Controller
     public $requiredPermissions = [
         'yfktn.contact_us.manage' 
     ];
-
+    
     public function __construct()
     {
         parent::__construct();

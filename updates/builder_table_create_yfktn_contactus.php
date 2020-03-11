@@ -14,7 +14,9 @@ class BuilderTableCreateYfktnContactus extends Migration
             $table->text('comment');
             $table->string('author');
             $table->string('email');
+            $table->string('ip')->nullable();
             $table->string('website')->nullable();
+            $table->tinyInteger('flagged')->nullable()->default(0)->unsigned();
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
         });

@@ -1,0 +1,26 @@
+{% set targetPartial = "'" ~ __SELF__ ~ "::onsubmit': '#hcommentForm'" %}
+<div id="hcommentForm">
+{{ form_ajax('onSubmit', { update: targetPartial, id:'commentForm', class:'comment-form' }) }}
+    <div class="row">
+        <div id="serverMsg"></div>
+    </div>
+    <div class="row">
+        <div class="comment-form-comment form-group col-md-12">
+            <textarea placeholder="Comment..." id="comment" name="comment" class="form-control"></textarea>
+        </div>
+        <div class="comment-form-author form-group col-md-4">
+            <input placeholder="Name *" id="author" name="author" type="text" value="" class="form-control">
+        </div>
+        <div class="comment-form-email form-group col-md-4">
+            <input placeholder="Email *" id="email" name="email" type="text" value="" class="form-control">
+        </div>
+        <div class="comment-form-url form-group col-md-4">
+            <input placeholder="Website" id="url" name="url" type="text" value="" class="form-control">
+        </div>
+        <div class="form-submit form-group col-md-12">
+            <button type="submit" class="submit" data-attach-loading>Post Comment</button>
+        </div>
+    </div>
+    <input type="hidden" name="author_start" value="{{ start_load }}">
+{{ form_close() }}
+</div>

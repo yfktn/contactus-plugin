@@ -8,3 +8,13 @@ columns:
     comment:
         label: yfktn.contactus::lang.column.list_comment
         type: text
+    flagged:
+        label: yfktn.contactus::lang.column.list_flagged
+        type: text
+    ip:
+        label: yfktn.contactus::lang.column.list_ip
+        type: text
+    created_at:
+        label: yfktn.contactus::lang.column.list_created_at
+        type: date
+        format: d-m-Y H:i
